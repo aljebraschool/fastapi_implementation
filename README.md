@@ -68,9 +68,8 @@ uvicorn main:app --reload
 The application will start running at http://localhost:8000. You can visit the auto-generated API documentation at http://localhost:8000/docs.
 
 - To run the single-file implementation (optional)
-  ```bash
+```bash
 uvicorn root:app --reload
-
 ```
 While functional, this version is less organized and more challenging to maintain.
 
@@ -87,7 +86,7 @@ GET /items/
 POST /items/
 PUT /items/{item_id}
 DELETE /items/{item_id}
-
+```
 Users Router
 Handles user-related functionality, such as authentication, user profiles, and role management. Example endpoints:
 
