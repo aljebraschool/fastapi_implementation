@@ -90,29 +90,34 @@ DELETE /items/{item_id}
 Users Router
 Handles user-related functionality, such as authentication, user profiles, and role management. Example endpoints:
 
+```bash
 GET /users/
 POST /users/
-
+```
 Files Router
 Supports file uploads and downloads. Example endpoints:
 
+```bash
 POST /files/upload
 GET /files/download/{file_id}
+```
 
 Filters Router
 Demonstrates the use of query parameters and filters. Example endpoint:
+```bash
 GET /filters/?query=example
-
+```
 Products Router
 Includes endpoints for managing product-related data. Example endpoints:
 
+```bash
 GET /products/
 POST /products/
-
+```
 You can explore all available endpoints and their detailed documentation in the Swagger UI at:
-
+```bash
 http://localhost:8000/docs
-
+```
 Notes
 The root.py file serves as a reference for how the project evolved from a single-file implementation to a modular structure. It is not intended for production use.
 
