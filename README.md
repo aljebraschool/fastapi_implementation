@@ -118,9 +118,9 @@ You can explore all available endpoints and their detailed documentation in the 
 ```bash
 http://localhost:8000/docs
 ```
-Notes
-The root.py file serves as a reference for how the project evolved from a single-file implementation to a modular structure. It is not intended for production use.
+### Notes
+## The root.py file serves as a reference for how the project evolved from a single-file implementation to a modular structure. It is not intended for production use.
 
-The modularized version in main.py is more maintainable, scalable, and better suited for real-world applications.
+## The modularized version in main.py is more maintainable, scalable, and better suited for real-world applications.
 
 
