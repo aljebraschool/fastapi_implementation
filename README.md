@@ -73,3 +73,50 @@ uvicorn root:app --reload
 
 ```
 While functional, this version is less organized and more challenging to maintain.
+
+## Usage
+
+The main functionality of the application is divided into the following routers:
+
+### Items Router
+
+Provides CRUD operations for managing items. Example endpoints:
+
+```bash
+GET /items/
+POST /items/
+PUT /items/{item_id}
+DELETE /items/{item_id}
+
+Users Router
+Handles user-related functionality, such as authentication, user profiles, and role management. Example endpoints:
+
+GET /users/
+POST /users/
+
+Files Router
+Supports file uploads and downloads. Example endpoints:
+
+POST /files/upload
+GET /files/download/{file_id}
+
+Filters Router
+Demonstrates the use of query parameters and filters. Example endpoint:
+GET /filters/?query=example
+
+Products Router
+Includes endpoints for managing product-related data. Example endpoints:
+
+GET /products/
+POST /products/
+
+You can explore all available endpoints and their detailed documentation in the Swagger UI at:
+
+http://localhost:8000/docs
+
+Notes
+The root.py file serves as a reference for how the project evolved from a single-file implementation to a modular structure. It is not intended for production use.
+
+The modularized version in main.py is more maintainable, scalable, and better suited for real-world applications.
+
+
