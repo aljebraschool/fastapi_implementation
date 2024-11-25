@@ -32,3 +32,44 @@ Initially, the project was written in a single file called `root.py`. While this
 
 ```bash
 git clone https://github.com/your-username/fastapi-complete-code.git
+
+```
+### Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### Activate the Virtual Environment
+- On Windows:
+
+```bash
+venv\Scripts\activate
+
+```
+- On Unix/macOS:
+
+```bash
+source venv/bin/activate
+```
+
+### Install the Required Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+### Run the FastAPI Application
+- To run the modularized implementation (recommended):
+
+```bash
+uvicorn main:app --reload
+
+```
+The application will start running at http://localhost:8000. You can visit the auto-generated API documentation at http://localhost:8000/docs.
+
+- To run the single-file implementation (optional)
+  ```bash
+uvicorn root:app --reload
+
+```
+While functional, this version is less organized and more challenging to maintain.
